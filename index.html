@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mon Parcours</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Lightbox2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Mon Portfolio</h1>
+      <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#parcours">Parcours & Projets</a>
+        <a href="#competences">Compétences & Outils</a>
+        <a href="#veille">Veille technologique</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2 class="titre-hero">Bienvenue sur mon portfolio</h2>
+      <p class="p-hero">Étudiant en BTS SIO option SLAM</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section id="presentation" class="presentation-section">
+    <div class="container">
+      <div class="cv-preview">
+        <iframe src="Enzo DOUAT CV copie.pdf"></iframe>
+      </div>
+      <div class="presentation-text">
+        <h3>Présentation</h3>
+        <h2>Qui suis-je ?</h2>
+        <p>
+          Étudiant en BTS SIO, je suis passionné par le sport (rugby, ski, pelote basque) et avant tout par le développement informatique. J’ai choisi cette formation afin de me spécialiser et de développer des compétences solides dans ce domaine.
+        </p>
+        <a href="Enzo DOUAT CV copie.pdf" class="btn-cv">CV -></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BTS SIO -->
+  <section id="bts-sio" class="bts-sio">
+    <div class="container">
+      <h2>Qu'est-ce que le <span>BTS SIO</span> ?</h2>
+      <p>
+        Le BTS SIO (Services Informatiques aux Organisations) est un diplôme Bac+2 
+        qui forme des techniciens en développement et en administration réseau.
+      </p>
+
+      <h3>Deux options :</h3>
+      <div class="bts-options">
+        <div class="option">
+          <h4>Option <span>SISR</span></h4>
+          <p>Spécialistes réseaux et équipements informatiques.</p>
+          <ul>
+            <li>Administrateur systèmes et réseaux</li>
+            <li>Informaticien support</li>
+            
+          </ul>
+        </div>
+
+        <div class="option">
+          <h4>Option <span>SLAM</span></h4>
+          <p>Spécialistes du développement logiciel et applications métiers.</p>
+          <ul>
+            <li>Développeur d’applications</li>
+            <li>Développeur informatique</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parcours -->
+  <section id="parcours" class="timeline">
+    <h2>Mon parcours</h2>
+    <h3>Mes expériences professionnelles</h3>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <div class="timeline-date">12 mai 2025 - 27 juin 2025</div>
+        <h4>Stage de validation</h4>
+        <p><em>Développement logiciel</em></p>
+        <p>Dolibarr</p>
+        <a href="https://www.dolibarr.org" class="btn-timeline">Site entreprise</a>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <div class="timeline-date">2024 - 2026</div>
+        <h4>BTS SIO - Toulouse</h4>
+        <p><em>Option SLAM</em></p>
+        <p>Institut Limayrac</p>
+        <a href="https://www.limayrac.fr" class="btn-timeline">Site école</a>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <div class="timeline-date">2023 - 2024</div>
+        <h4>BUT Informatique - Blagnac</h4>
+        <p><em>Option Générale</em></p>
+        <p>IUT de Blagnac</p>
+        <a href="https://www.iut-blagnac.fr/fr/formations/but-informatique" class="btn-timeline">Site école</a>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <div class="timeline-date">2021 - 2023</div>
+        <h4>BAC Technologique, Tarbes</h4>
+        <p><em>Option SIN</em></p>
+        <p>Lycée Jean Dupuy - Tarbes</p>
+        <a href="https://jean-dupuy.mon-ent-occitanie.fr" class="btn-timeline">Site lycée</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tableau de compétences -->
+  <section id="tableau-competences" class="tableau-competences">
+    <div class="container">
+      <h2>Tableau de compétences</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Projet</th>
+            <th>Gérer le patrimoine informatique</th>
+            <th>Répondre aux incidents et demandes</th>
+            <th>Développer la présence en ligne</th>
+            <th>Travailler en mode projet</th>
+            <th>Mettre à disposition un service</th>
+            <th>Organiser son développement pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- BTS -->
+          <tr class="subtitle">
+            <td colspan="7">Exemple de réalisation en BTS (2023 - 2025)</td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td></td><td class="active"><a href="https://www.linkedin.com/in/enzo-douat-67062529b/" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
+                   alt="LinkedIn" 
+            </a>
+                </td><td></td><td></td><td></td>
+            <td class="active">
+              <a href="https://www.linkedin.com/in/enzo-douat-67062529b/" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
+                     alt="LinkedIn" 
+              </a>
+            </td>            
+          </tr>
+          <tr>
+            <td>Projet professionnel</td>
+            <td></td>
+            <td class="active">
+              <a href="Technicien de maintenance informatique.pdf" data-lightbox="preuves" data-title="Preuve Site Orange">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Preuve Site Orange" width="40">
+              </a>
+            </td>
+            <td></td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>GLPI</td>
+            <td class="active">
+              <a href="Capture d’écran 2025-09-03 à 14.31.05.pdf" data-lightbox="preuves" data-title="Preuve GLPI">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="GLPI" width="40">
+              </a>
+            </td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>Athlétisme M2L</td>
+            <td></td>
+            <td class="active">
+              <a href="Capture d’écran 2025-09-03 à 14.12.54.pdf" data-lightbox="preuves" data-title="Preuve WordPress">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="WordPress" width="40">
+              </a>
+            </td>
+            <td class="active">
+              <a href="Capture d’écran 2025-09-03 à 19.29.49.png" data-lightbox="preuves" data-title="Preuve WordPress">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="WordPress" width="40">
+            </a>
+          </td><td class="active">
+            <a href="Capture d’écran 2025-09-03 à 15.13.46.png" data-lightbox="preuves" data-title="Preuve WordPress">
+            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="WordPress" width="40">
+          </a></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>APPfaq</td>
+            <td></td>
+            <td class="active">
+              <a href="Capture d’écran 2025-09-03 à 14.46.45.pdf" data-lightbox="preuves" data-title="Preuve Shopify">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Preuve Shopify" width="40">
+              </a>
+            </td>
+            <td class="active"><a href="Capture d’écran 2025-09-03 à 15.21.32.png" data-lightbox="preuves" data-title="Preuve Shopify">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Preuve Shopify" width="40">
+            </a></td><td class="active"><a href="Capture d’écran 2025-09-03 à 15.17.26.png" data-lightbox="preuves" data-title="Preuve Shopify">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Preuve Shopify" width="40">
+            </a></td><td></td><td></td>
+          </tr>
+          <tr>
+           
+          </tr>
+          <tr>
+            
+
+          <!-- Alternance -->
+          <tr class="subtitle">
+            <td colspan="7">Exemple de réalisation en Stage (2023 - 2025)</td>
+          </tr>
+          <tr>
+            <td>Récupération des serveurs Dolibarr grace a la VM Debian UTM</td>
+            <td></td>
+            <td class="active">
+              <a href="debian-11-xfce-arm64.png" data-lightbox="preuves" data-title="Preuve Page Liens">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Liens" width="40">
+              </a>
+            </td>
+            <td></td><td></td><td class="active"></td><td></td>
+          </tr>
+          <td>Utilisation de FramaGIT pour le partage des fichiers de codes</td>
+            <td></td>
+            <td class="active">
+              <a href="Capture d’écran 2025-09-03 à 15.45.01.png" data-lightbox="preuves" data-title="Preuve Page Liens">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Liens" width="40">
+              </a>
+            </td>
+            <td></td><td class="active"><a href="Capture d’écran 2025-09-03 à 15.45.01.png" data-lightbox="preuves" data-title="Preuve Page Liens">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Liens" width="40">
+            </a></td><td ></td><td></td>
+          </tr>
+          <td>Utilisation de FileZilla pour parcourir l'arborescence </td>
+            <td></td>
+            <td></td>
+            <td></td><td class="active"><a href="Capture d’écran 2025-09-03 à 15.50.34.png" data-lightbox="preuves" data-title="Preuve Page Liens">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Liens" width="40">
+            </a></td><td ></td><td></td>
+          </tr>
+          <td>Utilisation de PhpMyAdmin pour gérer les bases de données</td>
+            <td></td>
+            <td></td>
+            <td class="active"></td><td class="active"></td><td ></td><td></td>
+          </tr>
+          <td> Création d'un module météo pour des clients utilisant les services Dolibarr ( permettant de récupérer la localisation précise d'un client et de récupérer la température et le temps pour les prochain jours grace a une API météo)</td>
+            <td></td>
+            <td></td>
+            <td class="active"><a href="Capture d’écran 2025-09-03 à 15.54.50.png" data-lightbox="preuves" data-title="Preuve Page Liens">
+              <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Liens" width="40">
+            </a></td><td class="active"></td><td ></td><td></td>
+          </tr>
+
+          
+        </tbody>
+      </table>
+      <a href="E5 2025 - Tableau des compétences - Tableau de synthèse Épreuve E4.pdf" class="btn-tableau">Tableau -></a>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences" class="competences">
+    <h2>💻 Mes compétences développement et réseaux</h2>
+    <div class="carousel">
+      <button class="prev">‹</button>
+      <div class="carousel-container">
+        <div class="carousel-item html">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <h3>HTML / CSS</h3>
+          <p>Développement web et design responsive.</p>
+        </div>
+        <div class="carousel-item java">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <h3>Java</h3>
+          <p>Programmation orientée objet.</p>
+        </div>
+        <div class="carousel-item php">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+          <h3>PHP / MySQL</h3>
+          <p>Back-end et gestion des bases de données.</p>
+        </div>
+        <div class="carousel-item js">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+          <p>Scripts dynamiques et DOM manipulation.</p>
+        </div>
+        <div class="carousel-item python">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <h3>Python</h3>
+          <p>Automatisation et développement d’applications.</p>
+        </div>
+      </div>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- Outils -->
+  <section id="outils" class="competences">
+    <h2>🛠️ Mes outils / logiciels</h2>
+    <div class="carousel">
+      <button class="prev">‹</button>
+      <div class="carousel-container">
+        
+        <div class="carousel-item vscode">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+          <h3>Visual Studio Code</h3>
+          <p>Éditeur de code principal utilisé.</p>
+        </div>
+  
+        <div class="carousel-item xampp">
+          <img src="https://static.cdnlogo.com/logos/x/32/xampp.svg" alt="XAMPP">
+          <h3>XAMPP</h3>
+          <p>Serveur local pour le développement web.</p>
+        </div>
+  
+        <div class="carousel-item github">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <h3>GitHub / Git</h3>
+          <p>Gestion de version et travail collaboratif.</p>
+        </div>
+  
+        <!-- 🚀 Ajouts -->
+        <div class="carousel-item filezilla">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="FileZilla">
+          <h3>FileZilla</h3>
+          <p>Client FTP pour la gestion de fichiers sur serveur.</p>
+        </div>
+  
+        <div class="carousel-item phpmyadmin">
+          <img src="https://www.phpmyadmin.net/static/images/logo.png" alt="phpMyAdmin">
+          <h3>phpMyAdmin</h3>
+          <p>Outil de gestion de bases de données MySQL/MariaDB.</p>
+        </div>
+  
+        <div class="carousel-item utm">
+          <img src="https://raw.githubusercontent.com/utmapp/UTM/main/Resources/Images/AppIcon.png" alt="UTM">
+          <h3>UTM</h3>
+          <p>Virtualisation et émulation de systèmes d’exploitation.</p>
+        </div>
+  
+        <div class="carousel-item virtualbox">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" alt="VirtualBox">
+          <h3>VirtualBox</h3>
+          <p>Machine virtuelle pour tester différents environnements.</p>
+        </div>
+  
+        <div class="carousel-item debian">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="Debian">
+          <h3>Debian</h3>
+          <p>Système d’exploitation Linux utilisé pour les serveurs.</p>
+        </div>
+      </div>
+      <button class="next">›</button>
+    </div>
+  </section>
+  
+
+  <!-- Veille -->
+  <section id="veille" class="veille">
+    <h2>📰 Veille technologique</h2>
+    <div class="articles-container" id="articles-container">
+      <!-- Articles injectés dynamiquement -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>📩 Me contacter</h2>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:Enzo.douat@limayrac.fr">Enzo.douat@limayrac.fr</a>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Toulouse, France</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/enzo-douat-67062529b/" target="_blank">Mon LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 - Mon Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
