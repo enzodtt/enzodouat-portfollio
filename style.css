@@ -354,7 +354,6 @@ header.scrolled nav a {
   margin-bottom: 30px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   border-radius: 12px;
-  overflow: hidden;
 }
 .tableau-competences th,
 .tableau-competences td {
@@ -368,6 +367,21 @@ header.scrolled nav a {
   background: #0056ff;
   color: #fff;
   font-weight: 600;
+  position: sticky;
+  top: 65px;
+  z-index: 5;
+}
+.tableau-competences thead tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+.tableau-competences thead tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+.tableau-competences tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+.tableau-competences tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
 }
 .tableau-competences .subtitle td {
   background: #f0f4ff;

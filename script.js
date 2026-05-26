@@ -118,6 +118,16 @@ window.addEventListener("scroll", () => {
 fetchArticles();
 
 // =======================
+// Ouvrir les liens du tableau et des articles dans un nouvel onglet
+// =======================
+document.querySelectorAll("#tableau-competences a, .btn-timeline").forEach(link => {
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+  link.removeAttribute("data-lightbox");
+  link.removeAttribute("data-title");
+});
+
+// =======================
 // Filtres réalisations
 // =======================
 document.querySelectorAll(".real-filtre").forEach(btn => {
