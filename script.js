@@ -116,3 +116,29 @@ window.addEventListener("scroll", () => {
 
 // Lancer au chargement
 fetchArticles();
+
+// =======================
+// Filtres réalisations
+// =======================
+document.querySelectorAll(".real-filtre").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".real-filtre").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filter = btn.dataset.filter;
+
+    document.querySelectorAll(".real-card").forEach(card => {
+      const match = filter === "tous" || card.dataset.category === filter;
+      card.classList.toggle("hidden", !match);
+    });
+
+    document.querySelectorAll(".real-section-label").forEach(label => {
+      const cat = label.dataset.category;
+      if (filter === "tous") {
+        label.classList.remove("hidden");
+      } else {
+        label.classList.toggle("hidden", cat !== filter);
+      }
+    });
+  });
+});

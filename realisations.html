@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Réalisations - Portfolio Enzo Douat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Mon Portfolio</h1>
+      <nav>
+        <a href="index.html#presentation">Présentation</a>
+        <a href="index.html#parcours">Parcours & Projets</a>
+        <a href="realisations.html" class="active">Réalisations</a>
+        <a href="index.html#competences">Compétences & Outils</a>
+        <a href="index.html#veille">Veille technologique</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Réalisations -->
+  <section class="realisations" style="padding-top: 120px;">
+    <div class="container">
+      <h2>Mes réalisations</h2>
+
+      <!-- Filtres -->
+      <div class="real-filtres">
+        <button class="real-filtre active" data-filter="tous">Tous</button>
+        <button class="real-filtre" data-filter="formation">Formation BTS</button>
+        <button class="real-filtre" data-filter="pro1">Stage 1ère année</button>
+        <button class="real-filtre" data-filter="pro2">Stage 2ème année</button>
+      </div>
+
+      <!-- ===== FORMATION ===== -->
+      <h3 class="real-section-label" data-category="formation">Réalisations en cours de formation</h3>
+      <div class="real-grid">
+
+        <div class="real-card" data-category="formation">
+          <div class="real-card-icon linkedin-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <h4>Compte LinkedIn professionnel</h4>
+            <p>Création et utilisation d'un compte sur le réseau social professionnel LinkedIn pour développer sa présence en ligne et son réseau dans le domaine informatique.</p>
+            <div class="real-tags"><span>LinkedIn</span><span>Communication</span><span>Réseautage</span></div>
+            <div class="real-links">
+              <a href="https://www.linkedin.com/in/enzo-douat-67062529b/" target="_blank" rel="noopener" class="btn-real-primary"><i class="fa-brands fa-linkedin"></i> Voir le profil</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="formation">
+          <div class="real-card-icon projet-pro-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <h4>Projet professionnel</h4>
+            <p>Élaboration d'un projet professionnel orienté technicien de maintenance informatique, incluant l'analyse des débouchés, des compétences requises et des objectifs de carrière.</p>
+            <div class="real-tags"><span>Maintenance</span><span>Support</span><span>Analyse</span></div>
+            <div class="real-links">
+              <a href="Technicien de maintenance informatique.pdf" target="_blank" class="btn-real-secondary"><i class="fa-solid fa-file-pdf"></i> Voir le document</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="formation">
+          <div class="real-card-icon glpi-icon"><i class="fa-solid fa-ticket"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <h4>GLPI – Gestion de parc informatique</h4>
+            <p>Installation et configuration de GLPI pour la gestion du patrimoine informatique, la création de tickets et le suivi des interventions.</p>
+            <div class="real-tags"><span>GLPI</span><span>Réseau</span><span>Administration</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2025-09-03 à 14.31.05.pdf" data-lightbox="preuves" data-title="Preuve GLPI" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="formation">
+          <div class="real-card-icon athletisme-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <h4>Page web Athlétisme</h4>
+            <p>Création d'une page web athlétisme.html pour un site web présentant le sport : règles, terrains, disciplines et résultats.</p>
+            <div class="real-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2025-09-03 à 14.12.54.pdf" data-lightbox="preuves" data-title="Preuve Athlétisme" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card real-card-featured" data-category="formation">
+          <div class="real-card-icon appfaq-icon"><i class="fa-solid fa-circle-question"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <span class="real-badge featured">Projet phare</span>
+            <h4>Application FAQ</h4>
+            <p>Mise en place d'un site web de type FAQ : création d'une base de données SQL, formulaire de collecte de données, interface de gestion des questions/réponses.</p>
+            <div class="real-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            <div class="real-links">
+              <a href="https://antoine-haro.fr/preuve/app-faq/faq.php" target="_blank" rel="noopener" class="btn-real-primary"><i class="fa-solid fa-eye"></i> Voir le site</a>
+              <a href="https://github.com/AntoineHro/appFAQ" target="_blank" rel="noopener" class="btn-real-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card real-card-featured" data-category="formation">
+          <div class="real-card-icon restoweb-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <span class="real-badge featured">Projet phare</span>
+            <h4>Site RestoWeb</h4>
+            <p>Mise en place d'un site web de restaurant : simulation d'un panier, formulaire de paiement, formulaires de collecte de données client et gestion des commandes.</p>
+            <div class="real-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            <div class="real-links">
+              <a href="https://antoine-haro.fr/preuve/resto-web/index.php" target="_blank" rel="noopener" class="btn-real-primary"><i class="fa-solid fa-eye"></i> Voir le site</a>
+              <a href="https://github.com/AntoineHro/appResto-restoWeb-" target="_blank" rel="noopener" class="btn-real-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card real-card-featured" data-category="formation">
+          <div class="real-card-icon restoswing-icon"><i class="fa-solid fa-music"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge formation">Formation</span>
+            <span class="real-badge featured">Projet phare</span>
+            <h4>Application Resto Swing</h4>
+            <p>Développement d'un site web pour un restaurant à thème jazz swing : ambiance musicale, carte des plats et cocktails, système de réservation. Interface graphique Swing avec gestion des commandes via API.</p>
+            <div class="real-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span><span>Java</span><span>API</span></div>
+            <div class="real-links">
+              <a href="https://github.com/AntoineHro/app-Resto-Swing" target="_blank" rel="noopener" class="btn-real-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== PRO 1ère ANNÉE ===== -->
+      <h3 class="real-section-label" data-category="pro1">Réalisations en milieu professionnel — 1ère année <span>(Stage Dolibarr)</span></h3>
+      <div class="real-grid">
+
+        <div class="real-card" data-category="pro1">
+          <div class="real-card-icon debian-icon"><i class="fa-brands fa-linux"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro1">Stage 1ère année</span>
+            <h4>VM Debian – Récupération serveurs Dolibarr</h4>
+            <p>Récupération des serveurs Dolibarr grâce à la mise en place d'une machine virtuelle Debian via UTM. Configuration de l'environnement de développement.</p>
+            <div class="real-tags"><span>Debian</span><span>Linux</span><span>UTM</span><span>Virtualisation</span></div>
+            <div class="real-links">
+              <a href="debian-11-xfce-arm64.png" data-lightbox="preuves" data-title="Preuve VM Debian" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="pro1">
+          <div class="real-card-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro1">Stage 1ère année</span>
+            <h4>FramaGIT – Gestion de version</h4>
+            <p>Utilisation de FramaGIT pour le partage et la gestion des fichiers de code source au sein de l'équipe de développement.</p>
+            <div class="real-tags"><span>Git</span><span>FramaGIT</span><span>Versioning</span><span>Collaboration</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2025-09-03 à 15.45.01.png" data-lightbox="preuves" data-title="Preuve FramaGIT" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="pro1">
+          <div class="real-card-icon ftp-icon"><i class="fa-solid fa-folder-open"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro1">Stage 1ère année</span>
+            <h4>FileZilla – Arborescence serveur</h4>
+            <p>Utilisation de FileZilla pour parcourir l'arborescence des fichiers du serveur, effectuer des transferts et gérer les droits d'accès.</p>
+            <div class="real-tags"><span>FileZilla</span><span>FTP</span><span>Serveur</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2025-09-03 à 15.50.34.png" data-lightbox="preuves" data-title="Preuve FileZilla" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="pro1">
+          <div class="real-card-icon db-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro1">Stage 1ère année</span>
+            <h4>phpMyAdmin – Gestion des bases de données</h4>
+            <p>Utilisation de phpMyAdmin pour gérer les bases de données Dolibarr : consultation, modification des tables, requêtes SQL et maintenance.</p>
+            <div class="real-tags"><span>phpMyAdmin</span><span>MySQL</span><span>SQL</span><span>BDD</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2026-05-18 à 15.45.25.png" data-lightbox="preuves" data-title="Preuve phpMyAdmin" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card real-card-featured" data-category="pro1">
+          <div class="real-card-icon meteo-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro1">Stage 1ère année</span>
+            <span class="real-badge featured">Projet phare</span>
+            <h4>Module météo Dolibarr</h4>
+            <p>Création d'un module météo pour les clients utilisant Dolibarr : récupération de la localisation précise du client et affichage de la température et des prévisions pour les prochains jours via une API météo.</p>
+            <div class="real-tags"><span>PHP</span><span>API</span><span>Dolibarr</span><span>JavaScript</span></div>
+            <div class="real-links">
+              <a href="https://github.com/enzodtt/dolibarr" target="_blank" rel="noopener" class="btn-real-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="Capture d'écran 2025-09-03 à 15.54.50.png" data-lightbox="preuves" data-title="Preuve Module Météo" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Preuve</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== PRO 2ème ANNÉE ===== -->
+      <h3 class="real-section-label" data-category="pro2">Réalisations en milieu professionnel — 2ème année <span>(Stage ARTERRIS)</span></h3>
+      <div class="real-grid">
+
+        <div class="real-card" data-category="pro2">
+          <div class="real-card-icon support-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro2">Stage 2ème année</span>
+            <h4>Support utilisateurs – Logiciel Clarilog</h4>
+            <p>Réponse aux demandes des utilisateurs grâce au logiciel de ticketing Clarilog : prise en charge des incidents, suivi des tickets et résolution des problèmes informatiques.</p>
+            <div class="real-tags"><span>Clarilog</span><span>Support</span><span>Ticketing</span><span>Maintenance</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2026-05-18 à 16.08.31.png" data-lightbox="preuves" data-title="Preuve Support Clarilog" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="real-card" data-category="pro2">
+          <div class="real-card-icon inventaire-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="real-card-body">
+            <span class="real-badge pro2">Stage 2ème année</span>
+            <h4>Inventaire du parc informatique – PDA</h4>
+            <p>Gestion du parc informatique et réalisation d'un inventaire complet de terminaux PDA pour ARTERRIS, incluant l'identification, le référencement et la mise à jour de l'état du matériel.</p>
+            <div class="real-tags"><span>Inventaire</span><span>Parc informatique</span><span>PDA</span><span>ARTERRIS</span></div>
+            <div class="real-links">
+              <a href="Capture d'écran 2026-05-18 à 16.05.02.png" data-lightbox="preuves" data-title="Preuve Inventaire" class="btn-real-secondary"><i class="fa-solid fa-image"></i> Voir la preuve</a>
+              <a href="IMG_6042.pdf" target="_blank" class="btn-real-secondary"><i class="fa-solid fa-file-pdf"></i> Document</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 - Mon Portfolio</p>
+  </footer>
+
+  <script>
+    // Filtres réalisations
+    document.querySelectorAll(".real-filtre").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".real-filtre").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.dataset.filter;
+        document.querySelectorAll(".real-card").forEach(card => {
+          card.classList.toggle("hidden", filter !== "tous" && card.dataset.category !== filter);
+        });
+        document.querySelectorAll(".real-section-label").forEach(label => {
+          if (filter === "tous") {
+            label.classList.remove("hidden");
+          } else {
+            label.classList.toggle("hidden", label.dataset.category !== filter);
+          }
+        });
+      });
+    });
+
+    // Scroll header
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
